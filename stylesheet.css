@@ -28,6 +28,7 @@ a:hover {
   margin: 0 auto;
 }
 
+/* Sections */
 .section {
   padding: 60px 0;
 }
@@ -35,7 +36,7 @@ a:hover {
 /* Navigation */
 .topnav {
   background-color: #2c3e50;
-  padding: 10px 0;
+  padding: 15px 0;
   text-align: center;
 }
 
@@ -43,6 +44,8 @@ a:hover {
   color: #fff;
   margin: 0 15px;
   font-weight: 500;
+  padding: 10px;
+  display: inline-block;
 }
 
 .topnav a:hover {
@@ -55,9 +58,11 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .intro-text {
+  flex: 1;
   max-width: 60%;
 }
 
@@ -94,9 +99,8 @@ a:hover {
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .intro-text {
-  max-width: 60%; /* Adjust as needed */
+  max-width: 70%; /* Adjust as needed */
 }
 
 /* Publications Section */
@@ -114,6 +118,7 @@ a:hover {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
 }
 
 .publication-entry img {
@@ -177,4 +182,75 @@ a:hover {
 
 .footer p {
   margin: 0;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 1024px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .intro-text {
+    max-width: 100%;
+  }
+
+  .profile-image img {
+    max-width: 200px;
+  }
+
+  .publication-entry {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .publication-entry img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 0 15px;
+  }
+
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topnav a {
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+    padding: 8px 10px;
+  }
+
+  .accomplishment-list,
+  .blog-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .name {
+    font-size: 2rem;
+  }
+
+  .bio {
+    font-size: 1rem;
+  }
+
+  .publication-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
 }
