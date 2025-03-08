@@ -255,9 +255,10 @@ a:hover {
   }
 }
 .award-entry {
-  text-align: center; /* Center aligns text */
-  margin: 20px auto; /* Centers the section */
-  max-width: 800px; /* Prevents excessive width */
+  text-align: left;
+  margin: 20px 0;
+  width: 100%; /* Makes it full-width */
+  padding-left: 20px;
 }
 
 .membership-list {
