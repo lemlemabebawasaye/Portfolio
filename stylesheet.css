@@ -35,10 +35,11 @@ body {
 
 /* Social Links */
 .social-links a {
-    color: #007bff;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1rem;
 }
+
 
 .social-links a:hover {
     text-decoration: underline;
