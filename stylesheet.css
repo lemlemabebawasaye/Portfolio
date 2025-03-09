@@ -7,7 +7,7 @@ body {
 
 /* Set gray background with custom image */
 .header-section {
-  background: url("images/background.jpg") center/cover no-repeat, #d3d3d3; /* image */
+  background: url("images/background.jpeg") center/cover no-repeat, #d3d3d3; /* image */
   padding: 100px 0; /* Adjust padding for spacing */
   text-align: center;
   color: black; /* Adjust text color for visibility */
