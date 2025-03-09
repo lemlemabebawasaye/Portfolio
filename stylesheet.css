@@ -66,5 +66,8 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #2c3e50;
+    background-color: #ffffff; /* White color */
+    color: #333; /* Adjust text color to be visible on white background */
+    border-top: 1px solid #ddd; /* Optional: Add a subtle border for separation */
+    padding: 20px 0; /* Ensure good spacing */
 }
