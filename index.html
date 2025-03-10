@@ -118,17 +118,23 @@
 </div>
 
 <style>
-  .date {
-    display: inline-block;
-    width: 80px; /* Adjust width as needed */
-    font-weight: bold;
+  ul.list-unstyled li {
+    display: flex;
+    align-items: flex-start;
   }
-  
+
+  .date {
+    font-weight: bold;
+    min-width: 80px; /* Adjust width as needed */
+    text-align: right;
+    margin-right: 10px; /* Space between date and award */
+  }
+
   .award {
-    display: inline-block;
-    text-indent: 20px;
+    flex: 1; /* Allows the award text to take the remaining space */
   }
 </style>
+
 
 	  
 	  <!-- Licenses -->
